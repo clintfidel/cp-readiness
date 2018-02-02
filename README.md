@@ -1,1 +1,1 @@
-# My name is Fidelis Clinton, I am an aspiring andelan, wordclass software developer whose passion is to help build software that is aimed at solving problems earth is faced with and i believe in this movement'.'
+# My name is Fidelis Clinton, I am an aspiring andelan, wordclass software developer whose passion is to help build software that is aimed at solving problems earth is faced with and i believe in this movement .
