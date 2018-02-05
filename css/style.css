@@ -13,8 +13,8 @@ body {
    
 }
 
-footer hr {
-    background-color: rgba(0, 0, 0, .2)
+ hr {
+    background-color: rgba(0, 0, 0, 0.089)
 }
 nav {
     margin-right: 20px;
@@ -92,6 +92,12 @@ img {
     margin-left: calc(var(--margin)* 60);
 }
 
+#google-offer a {
+  text-decoration: none;
+  color: #1a0dab;
+  padding-left: calc(var(--pad)* 1)
+}
+
 footer {
     position: absolute;
     right: 0;
@@ -127,7 +133,36 @@ footer {
    padding: 10px 10px
 }
 
-@media screen and (max-width:450px){
+@media screen and (max-width:1200px) {
+    #userInput{
+        width: 90%;
+    }
+    img {
+        width: 40%;
+        margin-left: calc(var(--margin)* 60);
+    }
+
+    .about a{
+        text-decoration: none;
+        color: rgba(0,0,0,.54); 
+        padding: 10px 5px
+    }
+    .help a{
+        text-decoration: none;
+        color: rgba(0,0,0,.54); 
+        padding: 10px 5px
+    }
+    .help {
+        display: block;
+        float: none;
+    }
+    .about {
+        display: block;
+        float: none;
+    }
+}
+
+@media screen and (max-width:900px){
     #userInput{
         width: 90%;
     }
@@ -162,31 +197,11 @@ footer {
     }
 }
 
-@media screen and (max-width:1200px) {
-    #userInput{
-        width: 90%;
-    }
-    img {
-        width: 40%;
-        margin-left: calc(var(--margin)* 5);
-    }
-
-    .about a{
-        text-decoration: none;
-        color: rgba(0,0,0,.54); 
-        padding: 10px 5px
-    }
-    .help a{
-        text-decoration: none;
-        color: rgba(0,0,0,.54); 
-        padding: 10px 5px
-    }
-    .help {
+@media screen and (max-width:350px){
+    li a {
         display: block;
-        float: none;
-    }
-    .about {
-        display: block;
-        float: none;
+        color: black;
+        padding: 10px 10px;
+        text-decoration: none;
     }
 }
