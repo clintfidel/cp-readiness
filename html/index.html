@@ -5,32 +5,37 @@
   <title>Google page</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
 </head>
 
 <body>
-  <nav>
+<nav>
     <ul>
-      <li>Gmail</li>
-      <li>Images</li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </nav>
+        <li ><a href="#">Sign In</a></li>
+        <li><a href="#"><i class="fas fa-th"></i></a></li>
+        <li><a href="#">Images</a></li>
+        <li><a href="#">Gmail</a></li>
+      </ul>
+</nav>
+  
   <center>
     <div>
       <img src="../images/google.gif" alt="">
     </div>
+    <form action="#" method="post" onsubmit="return validate()">
+        <div>
+            <input id="userInput" type="text">
+          </div>
+          <div>
+            <input id="myInput" type="submit" value="Google Search">
+            <input id="myInput" type="button" value="I'm feeling lucky">
+          </div>
+    </form>
+    
     <div>
-      <input type="text">
-    </div>
-    <div>
-      <input type="button" value="Google Search">
-      <input type="button" value="I'm feeling lucky">
-    </div>
-    <div>
-     <p>Google Offered in</p>:
+     Google Offered in :
      <a href="#">Hausa</a>
      <a href="#">Igbo</a>
      <a href="#">French</a>
@@ -39,21 +44,25 @@
     </div>
   </center>
   <footer>
-    Nigeria
+    <p>Nigeria</p> 
     <hr>
-    <div>
-        <a href="#">Advertising</a>
-        <a href="#">Business</a>
-        <a href="#">About</a>
+    <div class="container">
+        <div class="about">
+            <a href="#">Advertising</a>
+            <a href="#">Business</a>
+            <a href="#">About</a>
+        </div>
+        <div class="help">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Setting</a>
+            <a href="#">Use Google.com</a>
+        </div>
     </div>
-    <div>
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="#">Setting</a>
-        <a href="#">Use Google.com</a>
-    </div>
+   
   </footer>
 
+<script type="text/javascript" src="../js/index.js"></script>
 </body>
 
 </html>
