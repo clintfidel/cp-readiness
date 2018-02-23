@@ -4,7 +4,5 @@ function validate () {
         alert("please fill out the field");
         return false;
     }
-    else {
-        alert(input)
-    }
+    alert(input)
 }
