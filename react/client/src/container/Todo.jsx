@@ -5,7 +5,7 @@ class Todo extends Component {
   constructor (props) {
     super(props);
 
-   const todoList = JSON.parse(localStorage.getItem('todo'))
+   const todoList = JSON.parse(localStorage.getItem('todo')) || []
     console.log(todoList)
    this.state = {
       todo: '',
@@ -28,18 +28,13 @@ class Todo extends Component {
   }
 
   onSubmit (event) {
-    // if(this.state.todo.trim() === ''){
-    //   return (alert('No entry'))
-    // }
+    if(this.state.todo.trim() === ''){
+      return (alert('No entry'))
+    }
     event.preventDefault();
     let {items} = this.state;
-   
-      items.push(this.state.todo)
-   
-    
-    
+      items.push(this.state.todo);
       localStorage.setItem('todo', JSON.stringify(items))
-    // )
      
     this.setState({
       todo: '',
