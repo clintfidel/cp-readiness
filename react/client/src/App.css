@@ -1,0 +1,112 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+  background-size: cover;
+  background: url('./public/images/background.jpg') no-repeat center center fixed;
+}
+.container {
+  /* background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover; */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80vh;
+  width: 60%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5); 
+  
+  
+}
+.input-box {
+  padding: 20px 20%;
+  
+}
+
+
+
+.box{
+  display: flex;
+}
+#text {
+  height: 25px;
+  width: 100%;
+  padding-left: 5px;
+  outline: none;
+  border: 2px solid brown;
+  font-weight: bold;
+  font-size: 15px
+}
+  
+button {
+  background-color: brown;
+  color:white;
+  font-size: 17px;
+  font-weight: bolder
+  
+}
+
+.no-todo {
+  text-align: center;
+  font-size: 23px;
+  margin: 15px 0;
+  font-weight: bolder;
+}
+.todo-list {
+  border: 2px solid brown;
+  margin: 34px 20%;
+  max-height: 40vh;
+  overflow-y: scroll;
+ 
+}
+header{
+  text-shadow: 2px 1px  brown;
+  text-align: center;
+  font-weight: bolder;
+  padding: 5px 0;
+  font-size: 25px
+  
+}
+.my-items li {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  position: relative;
+  font-size: 23px;
+  padding-top: 12px;
+  padding-left: 0px;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  list-style: none;
+  
+}
+
+
+
+#check-box {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+hr {
+  background-color: rgb(148, 34, 34);
+  margin: 0 10px;
+  display: block;
+  height: 1px;
+  
+}
+
+@media screen and (max-width:350px){
+
+/* .my-items li {
+    margin: 0;
+    padding-left: -15px;
+  }
+   */
+}
+
